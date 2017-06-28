@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="co.edu.udea.compumovil.gr08_20171.Lab4.activities.Register">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_edit_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/edit_perfil_photo_usuario"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_margin="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin2">
+
+                <RadioGroup
+                    android:layout_width="@dimen/none"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:id="@+id/rg_radio_group"
+                    android:checkedButton="@+id/rb_no_foto">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No foto"
+                        android:id="@+id/rb_no_foto" />
+                    <RadioButton
+                        android:id="@+id/rb_camara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto camara" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto galeria"
+                        android:id="@+id/rb_galeria" />
+                </RadioGroup>
+                <Button
+                    android:id="@+id/btn_subir"
+                    android:layout_width="@dimen/none"
+                    android:layout_height="@dimen/regular_height"
+                    android:layout_weight="2"
+                    android:text="subir"
+                    android:textSize="@dimen/standar_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/margin2"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorAccent"
+                    android:elevation="@dimen/elevation4"
+                    android:onClick="Subir"/>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_perfil_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24px"
+                    android:drawablePadding="10dp"
+                    android:hint="Name"
+                    android:inputType="textPersonName|text"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_perfil_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24px"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName|text"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_perfil_password"
+                    android:hint="@string/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_https_black_24px"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_perfil_email"
+                    android:hint="@string/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email_black_24px"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_perfil_age"
+                    android:hint="@string/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_details_black_24px"
+                    android:drawablePadding="10dp"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:text="@string/guardar"
+                style="@style/Base.TextAppearance.AppCompat.Body2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_guardar_edit"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

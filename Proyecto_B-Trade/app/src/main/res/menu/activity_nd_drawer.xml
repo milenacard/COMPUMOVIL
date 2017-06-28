@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_libreriaPublica"
+            android:icon="@drawable/ic_collections_bookmark_black_24dp"
+            android:title="Librería Pública" />
+        <item
+            android:id="@+id/nav_mislibros"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="Mis libros" />
+        <item
+            android:id="@+id/nav_librosinteres"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Libros de Interés" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_forum_black_24dp"
+            android:title="Chat" />
+    </group>
+
+    <item android:title="Aplicación">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_more_horiz_black_24dp"
+                android:title="Acerca de" />
+            <item
+                android:id="@+id/nav_cerrarsesion"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Cerrar sesión" />
+
+        </menu>
+    </item>
+
+</menu>

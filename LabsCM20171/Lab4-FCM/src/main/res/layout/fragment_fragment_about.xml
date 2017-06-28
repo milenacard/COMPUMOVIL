@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.gr08_20171.Lab4.fragments.FragmentAbout">
+
+    <TextView
+        android:id="@+id/about_of_compumovil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materia: Computación Móvil"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código: 2508767"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horarios de clase: Grupo-1 WV14-16"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aula: LIS"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:textStyle="italic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Integrantes:"
+            android:textSize="30dp"
+            android:padding="@dimen/backdrop_title"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_face_black_24px"
+            android:drawablePadding="10dip"
+            android:text="Milena Cárdenas Alzate"
+            android:layout_gravity="center"
+            android:imeOptions="actionNext"
+            android:textSize="25dp"/>
+            />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_accessibility_black_24px"
+            android:drawablePadding="10dip"
+            android:text="Daniel Felipe Ospina Pérez"
+            android:layout_gravity="center"
+            android:imeOptions="actionNext"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

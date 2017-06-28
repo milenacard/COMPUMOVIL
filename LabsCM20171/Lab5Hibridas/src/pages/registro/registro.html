@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+<form name="registroForm" (submit)="registerUser()" novalidate>
+    <!--divs-->
+    <div class="row responsive-md">
+        <div class="col col-50 col-offset-25">  
+            <ion-item>
+              <ion-label stacked>Email</ion-label>
+              <ion-input type="email" [(ngModel)]="email" placeholder="Your email address" name="email"> </ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label stacked>Password</ion-label>
+              <ion-input type="password"  [(ngModel)]="password" placeholder="Your password" name="password"></ion-input>
+            </ion-item>
+
+            <button ion-button block type="submit">
+              Registrar
+            </button>
+
+        </div>
+    </div>
+
+</form>
+
+  
+</ion-content>

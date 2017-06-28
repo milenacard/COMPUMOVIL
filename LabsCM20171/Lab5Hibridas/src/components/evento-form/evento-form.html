@@ -1,0 +1,82 @@
+<form #eventoForm="ngForm" name="eventoForm" novalidate>
+  <ion-item>
+    <ion-label floating color="primary">Nombre</ion-label>
+    <ion-input [(ngModel)]="evento.nombre" name="nombre" type="text" #nombre="ngModel" required></ion-input>
+  </ion-item>
+
+  <p [hidden]="nombre.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+  <ion-item>
+    <ion-label floating color="primary">Descripción</ion-label>
+    <ion-textarea [(ngModel)]="evento.descripcion" name="descripcion" type="text" #descripcion="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="descripcion.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+  <ion-item>
+    <ion-label floating color="primary">Puntuación</ion-label>
+    <ion-textarea [(ngModel)]="evento.puntuacion" name="puntuacion" type="text" #puntuacion="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="puntuacion.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+    <ion-item>
+    <ion-label floating color="primary">Responsable</ion-label>
+    <ion-textarea [(ngModel)]="evento.responsable" name="puntuacion" type="text" #responsable="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="responsable.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+    <ion-item>
+    <ion-label floating color="primary">Fecha</ion-label>
+    <ion-textarea [(ngModel)]="evento.fecha" name="puntuacion" type="text" #fecha="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="fecha.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+    <ion-item>
+    <ion-label floating color="primary">Latitud</ion-label>
+    <ion-textarea [(ngModel)]="evento.latitud" name="puntuacion" type="text" #latitud="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="latitud.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+    <ion-item>
+    <ion-label floating color="primary">Longitud</ion-label>
+    <ion-textarea [(ngModel)]="evento.longitd" name="puntuacion" type="text" #longitd="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="longitd.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+   <ion-item>
+    <ion-label floating color="primary">Información General</ion-label>
+    <ion-textarea [(ngModel)]="evento.informacionGeneral" name="puntuacion" type="text" #informacionGeneral="ngModel" required></ion-textarea>
+  </ion-item>
+
+  <p [hidden]="informacionGeneral.valid" color="danger" padding-left>
+    Este campo es requerido
+  </p>
+
+  <ion-row responsive-sm>
+    <ion-col>
+      <button ion-button [disabled]="!eventoForm.valid" (click)="processEvento()" type="submit" color="primary" block>
+          {{submitBtn}}
+      </button>
+    </ion-col>
+  </ion-row>
+
+</form>

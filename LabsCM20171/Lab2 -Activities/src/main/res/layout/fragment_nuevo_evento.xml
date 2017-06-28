@@ -1,0 +1,113 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.gr08_20171.Lab2.Activity.activities.MenuPrincipal">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:padding="@dimen/margin"
+        android:layout_gravity="end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/newevent_name_event"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_height"
+                android:hint="@string/nombre_del_evento"
+                android:textSize="@dimen/standar_size"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textCapWords|textNoSuggestions"/>
+
+            <EditText
+                android:id="@+id/newevent_responsible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/responsable"
+                android:textSize="@dimen/standar_size"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"/>
+
+            <EditText
+                android:id="@+id/newevent_fecha_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fecha_del_evento"
+                android:textSize="@dimen/standar_size"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:inputType="textCapWords|textNoSuggestions"
+                />
+
+            <EditText
+                android:id="@+id/newevent_score"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_height"
+                android:hint="@string/puntuaci_n"
+                android:textSize="@dimen/standar_size"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="number|textNoSuggestions"/>
+
+            <EditText
+                android:id="@+id/newevent_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_height"
+                android:hint="@string/descripcion"
+                android:textSize="@dimen/standar_size"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords|textNoSuggestions"/>
+
+            <EditText
+                android:id="@+id/newevent_infogeneral"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/regular_height"
+                android:hint="@string/informacion_general"
+                android:textSize="@dimen/standar_size"
+                android:gravity="left"
+                android:layout_marginTop="@dimen/margin"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords|textNoSuggestions"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/none"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin">
+
+        <Button
+            android:id="@+id/btn_crear_carrera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/crear_carrera"
+            android:textSize="@dimen/standar_size"
+            android:gravity="center"
+            android:background="@color/colorAccent"
+            android:elevation="@dimen/elevation4"/>
+    </LinearLayout>
+
+
+</LinearLayout>

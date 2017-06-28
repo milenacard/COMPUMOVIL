@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Proyecto_B-Trade</string>
+    <string name="title_activity_nd">NDActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Iniciar_sesion">¿Ya eres usuario? Iniciar Sesión</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="repita_contraseña">Repita la contraseña</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="nombre">Nombre</string>
+    <string name="title_activity_eliminar">eliminar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

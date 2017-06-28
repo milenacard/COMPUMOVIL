@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.gr08_20171.Lab3.activities.EventDetail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_event_photo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            app:layout_collapseMode="parallax"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/detail_event_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_photo"
+            android:padding="2dp"
+            android:text="Name_Event"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:textSize="@dimen/backdrop_title"
+            style="blond"/>
+
+        <ImageButton
+            android:id="@+id/detail_event_ubication"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/detail_event_name"
+            android:contentDescription="Got to maps"
+            android:src="@drawable/ic_room_black_24px"
+            android:drawablePadding="10dip" />
+
+        <TextView
+            android:id="@+id/detail_event_btnubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Ubicacion"
+            android:textColor="#222"
+            android:layout_below="@+id/detail_event_ubication"
+            android:gravity="right"
+            android:textSize="@dimen/backdrop_subtitle"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/backdrop_title"
+        android:orientation="vertical">
+
+
+        <RatingBar
+            android:id="@+id/detail_event_rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_name"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/event_photo"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.50" />
+
+        <TextView
+            android:id="@+id/detail_event_responsible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/backdrop_subtitle"
+            android:text="@string/responsable"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/backdrop_subtitle" />
+
+        <TextView
+            android:id="@+id/detail_event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_margin="@dimen/backdrop_subtitle"
+            android:paddingRight="@dimen/backdrop_subtitle"
+            android:text="@string/date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/backdrop_subtitle"
+             />
+
+        <TextView
+            android:id="@+id/detail_event_generalinformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:text="@string/informacion_general"
+            android:textColor="@android:color/black"
+            android:layout_margin="@dimen/backdrop_subtitle"
+            android:paddingRight="@dimen/backdrop_subtitle"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/backdrop_subtitle" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

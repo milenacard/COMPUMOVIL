@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.udea.compumovil.gr08_2017.proyecto_b_trade.Fragments.FragmentLibrosDeInteres">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_libros_interes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+
+</FrameLayout>

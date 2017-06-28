@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/placeImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:transitionName="tImage" />
+
+        <LinearLayout
+            android:id="@+id/llEditTextHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#95000000">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/mensaje_interes_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Puedes enviar un mensaje al propietario."
+                    android:textColor="@android:color/white" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_detail" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/placeNameHolder"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/jet"
+            android:transitionName="tNameHolder">
+
+            <TextView
+                android:id="@+id/nombre_libro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/jet"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btn_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_star_black_24dp"
+            android:tint="@color/colorPrimaryDark" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:id="@+id/SCROLLER_ID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Sinopsis"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/sinopsis_libro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="-10dp"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Estado del Libro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <RatingBar
+                    android:id="@+id/detail_libro_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:isIndicator="true"
+
+                    android:numStars="5"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:stepSize="1.0"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/datos_libro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

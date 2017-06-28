@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">"Lab2Activities"</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="alert_not_found_username">This Username not found</string>
+    <string name="error_invalid_password">This password is too short</string>
+
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="save_register">Save Register</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date">Date</string>
+    <string name="informacion_general">Informacion General</string>
+    <string name="responsable">Responsable</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="nombre_del_evento">Nombre del Evento</string>
+    <string name="puntuaci_n">Puntuación</string>
+    <string name="fecha_del_evento">Fecha del Evento</string>
+    <string name="crear_carrera">Crear Carrera</string>
+</resources>

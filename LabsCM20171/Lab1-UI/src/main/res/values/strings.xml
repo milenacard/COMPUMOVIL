@@ -1,0 +1,96 @@
+<resources>
+
+    <string name="app_name">LabsCM20171</string>
+
+
+    <!--Strings usados en el Activity PersonalInfo-->
+
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="sexo">Sexo</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="fechaNaci">Fecha de Nacimiento</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="gradoEscol">Grado de Escolaridad</string>
+    <string-array name="listaGradosEscolaridad">
+        <item>Grado de Escolaridad</item>
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Universidad</item>
+        <item>Otro</item>
+    </string-array>
+    <string name="siguiente">Siguiente</string>
+    <string name="info_personal">Información Personal</string>
+
+
+    <!--Strings usados en el Activity OtherInfo-->
+
+    <string name="pasatiempos">Pasatiempos:</string>
+    <string name="leer">Leer</string>
+    <string name="verTv">Ver Tv</string>
+    <string name="bailar">Bailar</string>
+    <string name="cantar">Cantar</string>
+    <string name="nadar">Nadar</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="info_other">Información Complementaria</string>
+
+    <!--Strings usados en el Activity ContactInfo-->
+
+    <string name="telefono">Teléfono</string>
+    <string name="correo">Correo</string>
+    <string name="pais">País</string>
+    <string-array name="paises_arrays">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>España</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+    <string name="ciudad">Ciudad</string>
+    <string name="direccion">Dirección</string>
+    <string name="info_de_contacto">Información de Contacto</string>
+    <string name="error_telefono">Debes Poner un Telefono</string>
+    <string name="error_pais">Selecciona un País</string>
+    <string name="error_ciudad">Selecciona una ciudad</string>
+    <string name="error_nombre">Debes Poner tu Nombre</string>
+    <string name="error_apellidos">Debes poner tus Apellidos</string>
+    <string name="error_fecha">Debes seleccionar tu fecha de Nacimiento</string>
+    <string-array name="ciudades_arrays">
+        <item>Bogotá</item>
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Cartagena de Indias</item>
+        <item>Soledad</item>
+        <item>Cúcuta</item>
+        <item>Ibagué</item>
+        <item>Soacha</item>
+        <item>Bucaramanga</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>Bello</item>
+        <item>Valledupar</item>
+        <item>Pereira</item>
+        <item>Buenaventura</item>
+        <item>Pasto</item>
+        <item>Manizales</item>
+        <item>Montería</item>
+        <item>Neiva</item>
+    </string-array>
+</resources>

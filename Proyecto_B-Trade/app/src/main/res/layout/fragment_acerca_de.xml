@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.edu.udea.compumovil.gr08_2017.proyecto_b_trade.Fragments.FragmentAcercaDe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_of_compumovil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="B-trade"
+                android:textColor="@color/colorPrimary"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Aplicación móvil que permite a los usuarios la búsqueda, intercambio y publicación de imágenes de libros físicos usados de cualquier categoría, ademas es un medio para contactar a dos usuarios interesados en un libro."
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:text="Responsables:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_face_black_24px"
+                    android:drawablePadding="10dip"
+                    android:imeOptions="actionNext"
+                    android:text="Milena Cárdenas Alzate"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25dp" />
+                />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_tag_faces_black_24dp"
+                    android:drawablePadding="10dip"
+                    android:imeOptions="actionNext"
+                    android:text="Daniel Felipe Ospina Pérez"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

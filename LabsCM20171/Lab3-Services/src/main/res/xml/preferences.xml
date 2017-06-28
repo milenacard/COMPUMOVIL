@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Opciones">
+
+        <Preference
+            android:key="editarPerfil"
+            android:title="Editar Perfil"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="KeepLogged"
+            android:title="Mantener Sesión" />
+
+        <ListPreference
+            android:key="tiempo"
+            android:defaultValue="60000"
+            android:title="Elegir cada cuanto actualizar eventos"
+            android:entries="@array/tiemposTexto"
+            android:entryValues="@array/tiemposDato"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Notificaciones">
+
+        <CheckBoxPreference
+            android:key="notificaciones"
+            android:title="Permitir notificaciones" />
+        <CheckBoxPreference
+            android:key="sonidoNotificaciones"
+            android:title="Sonido en notificaciones" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

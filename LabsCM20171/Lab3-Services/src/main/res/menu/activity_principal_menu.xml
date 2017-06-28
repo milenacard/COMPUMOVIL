@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_perfil"
+            android:icon="@drawable/ic_account_box_black_24px"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/item_eventos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/item_actualizar"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            android:title="Actualizar eventos" />
+        <item
+            android:id="@+id/item_configuracion"
+            android:icon="@drawable/ic_settings_black_24px"
+            android:title="Configuracion" />
+        <item
+            android:id="@+id/item_cerrar_sesion"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cerrar sesion" />
+        <item
+            android:id="@+id/item_acerca_de"
+            android:icon="@drawable/ic_more_horiz_black_24px"
+            android:title="Acerca de" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LabsCM20171</string>
+    <string name="apellidos">Last Name</string>
+    <string name="bailar">Dancing</string>
+    <string name="cambiar">Change</string>
+    <string name="cantar">Singing</string>
+    <string name="ciudad">City</string>
+    <string name="correo">email</string>
+    <string name="direccion">Address</string>
+    <string name="fechaNaci">Birthdate</string>
+    <string name="gradoEscol">School Grade</string>
+    <string name="hombre">Male</string>
+    <string name="info_de_contacto">Contact Information</string>
+    <string name="info_other">Additional Information</string>
+    <string name="info_personal">Personal Information</string>
+    <string name="leer">Reading</string>
+    <string name="mostrar">Show Summary</string>
+    <string name="mujer">Female</string>
+    <string name="nadar">Swimming</string>
+    <string name="nombres">Name</string>
+    <string name="pais">Country</string>
+    <string name="pasatiempos">Hobbies</string>
+    <string name="sexo">Gender</string>
+    <string-array name="listaGradosEscolaridad">
+        <item>Primary</item>
+        <item>High school</item>
+        <item>University</item>
+        <item>Other</item>
+    </string-array>
+    <string name="siguiente">Next</string>
+    <string name="telefono">Telephone</string>
+    <string name="verTv">Watching TV</string>
+    <string name="error_telefono"> You must put a phone </string>
+    <string name="error_pais"> Select a Country </string>
+    <string name="error_ciudad"> Select a city </string>
+    <string name="error_nombre"> You must put your name </string>
+    <string name="error_apellidos">You must put your Last name</string>
+    <string name="error_fecha"> You must select your Birth date </string>
+    <string-array name="ciudades_arrays">
+        <item>Bogotá</item>
+        <item>Medellín</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+        <item>Cartagena de Indias</item>
+        <item>Soledad</item>
+        <item>Cúcuta</item>
+        <item>Ibagué</item>
+        <item>Soacha</item>
+        <item>Bucaramanga</item>
+        <item>Santa Marta</item>
+        <item>Villavicencio</item>
+        <item>Bello</item>
+        <item>Valledupar</item>
+        <item>Pereira</item>
+        <item>Buenaventura</item>
+        <item>Pasto</item>
+        <item>Manizales</item>
+        <item>Montería</item>
+        <item>Neiva</item>
+    </string-array>
+    <string-array name="paises_arrays">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>España</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+</resources>
